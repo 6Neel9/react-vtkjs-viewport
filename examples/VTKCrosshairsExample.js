@@ -84,6 +84,7 @@ class VTKCrosshairsExample extends Component {
         .getPointData()
         .getScalars()
         .getRange();
+      console.log(range,ctImageData);
 
       const mapper = vtkVolumeMapper.newInstance();
       const ctVol = vtkVolume.newInstance();
